@@ -46,22 +46,22 @@ const questions = [
 // 画像の定義 (仮の共通画像をFallbackとして設定可能)
 const fallbackImg = 'Images/INTJ.png'; // 仮の添付画像
 const mbtiImages = {
-    'INTJ': 'INTJ.png',
-    'INTP': 'INTP.png',
-    'ENTJ': 'ENTJ.png',
-    'ENTP': 'ENTP.png',
-    'INFJ': 'INFJ.png',
-    'INFP': 'INFP.png',
-    'ENFJ': 'ENFJ.png',
-    'ENFP': 'ENFP.png',
-    'ISTJ': 'ISTJ.png',
-    'ISFJ': 'ISFJ.png',
-    'ESTJ': 'ESTJ.png',
-    'ESFJ': 'ESFJ.png',
-    'ISTP': 'ISTP.png',
-    'ISFP': 'ISFP.png',
-    'ESTP': 'ESTP.png',
-    'ESFP': 'ESFP.png'
+    'INTJ': 'Images/INTJ.png',
+    'INTP': 'Images/INTP.png',
+    'ENTJ': 'Images/ENTJ.png',
+    'ENTP': 'Images/ENTP.png',
+    'INFJ': 'Images/INFJ.png',
+    'INFP': 'Images/INFP.png',
+    'ENFJ': 'Images/ENFJ.png',
+    'ENFP': 'Images/ENFP.png',
+    'ISTJ': 'Images/ISTJ.png',
+    'ISFJ': 'Images/ISFJ.png',
+    'ESTJ': 'Images/ESTJ.png',
+    'ESFJ': 'Images/ESFJ.png',
+    'ISTP': 'Images/ISTP.png',
+    'ISFP': 'Images/ISFP.png',
+    'ESTP': 'Images/ESTP.png',
+    'ESFP': 'Images/ESFP.png'
 };
 
 // 状態管理
