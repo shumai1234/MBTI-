@@ -23,10 +23,10 @@ const questions = [
     // reverse が false の場合: 「そう思う」がそのまま高い点数
     // reverse が true の場合: 「そう思う」が低い点数に逆転する
     // dummy が true の場合: どの選択肢を選んでも中間の点数（4点）になる
-    { id: 'q1', text: "デートの行き先や食事のメニューは、自分から提案して決める。", layer: 'SM', reverse: false, dummy: false },
+    { id: 'q1', text: "遊びの行き先や食事のメニューは、自分から提案して決める。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q2', text: "グループで意見が割れた時、最終的に「こうしよう」とまとめ役を買って出ることが多い。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q3', text: "相手に「何でもいいよ、任せる」と言われると、煩わしく感じる。", layer: 'SM', reverse: true, dummy: false },
-    { id: 'q4', text: "自分のこだわりやマイルールを、パートナーや友人にも尊重してほしい。", layer: 'SM', reverse: false, dummy: false },
+    { id: 'q4', text: "自分のこだわりやマイルールを、パートナーや友人も尊重すべきだと感じる。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q5', text: "喧嘩をした時、時間が問題を解決するだろうと考える", layer: 'SM', reverse: true, dummy: false },
     { id: 'q6', text: "会話の主導権は自分が握り、自分の話を楽しそうに聞いてほしい。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q7', text: "仕事やプロジェクトでは、自分で方針を決めてクリエイティブに働く方が得意だ。", layer: 'SM', reverse: false, dummy: false },
