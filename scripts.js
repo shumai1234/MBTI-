@@ -43,6 +43,27 @@ const questions = [
     { id: 'q19', text: "孤独を感じやすく、誰にも必要とされていないと感じると耐えられない。", layer: 'LD' }
 ];
 
+// 画像の定義 (仮の共通画像をFallbackとして設定可能)
+const fallbackImg = 'Images/INTJ.png'; // 仮の添付画像
+const mbtiImages = {
+    'INTJ': 'Images/INTJ.png',
+    'INTP': 'Images/INTP.png',
+    'ENTJ': 'Images/ENTJ.png',
+    'ENTP': 'Images/ENTP.png',
+    'INFJ': 'Images/INFJ.png',
+    'INFP': 'Images/INFP.png',
+    'ENFJ': 'Images/ENFJ.png',
+    'ENFP': 'Images/ENFP.png',
+    'ISTJ': 'Images/ISTJ.png',
+    'ISFJ': 'Images/ISFJ.png',
+    'ESTJ': 'Images/ESTJ.png',
+    'ESFJ': 'Images/ESFJ.png',
+    'ISTP': 'Images/ISTP.png',
+    'ISFP': 'Images/ISFP.png',
+    'ESTP': 'Images/ESTP.png',
+    'ESFP': 'Images/ESFP.png'
+};
+
 // 状態管理
 let currentType = "";
 let answers = {};
@@ -51,10 +72,10 @@ const questionsPerPage = 5;
 
 // クラス・属性の定義
 const classAttributes = {
-    'SL': { suffix: 'SL', name: '情熱のXX', color: 'var(--acc-sl)', glitchColor1: '#FF4B2B', glitchColor2: '#FFA07A' },
-    'SD': { suffix: 'SD', name: '孤高のXX', color: 'var(--acc-sd)', glitchColor1: '#00D2FF', glitchColor2: '#3A7BD5' },
-    'ML': { suffix: 'ML', name: '献身のXX', color: 'var(--acc-ml)', glitchColor1: '#A8FF78', glitchColor2: '#78ffd6' },
-    'MD': { suffix: 'MD', name: '淡白なXX', color: 'var(--acc-md)', glitchColor1: '#8E2DE2', glitchColor2: '#4A00E0' }
+    'SL': { suffix: 'SL', name: '情熱のXX', color: 'var(--acc-sl)', glitchColor1: '#FF4B2B', glitchColor2: '#FFA07A', auraRGB: '255, 75, 43' },
+    'SD': { suffix: 'SD', name: '孤高のXX', color: 'var(--acc-sd)', glitchColor1: '#00D2FF', glitchColor2: '#3A7BD5', auraRGB: '0, 210, 255' },
+    'ML': { suffix: 'ML', name: '献身のXX', color: 'var(--acc-ml)', glitchColor1: '#A8FF78', glitchColor2: '#78ffd6', auraRGB: '168, 255, 120' },
+    'MD': { suffix: 'MD', name: '淡白なXX', color: 'var(--acc-md)', glitchColor1: '#8E2DE2', glitchColor2: '#4A00E0', auraRGB: '142, 45, 226' }
 };
 
 // 初期化
@@ -154,6 +175,11 @@ function init() {
                 <div class="glitch" data-text="XXXX">XXXX</div>
             </div>
             <div class="result-final" id="final-result">
+                <!-- イメージ画像とネオン背景 -->
+                <div class="attribute-aura" id="aura-bg">
+                    <img id="res-image" src="" alt="タイプ画像" class="type-image">
+                </div>
+                
                 <h2 class="class-title" id="res-class">XXXX-XX</h2>
                 <div class="attribute-title" id="res-attr">属性のXX</div>
                 <div class="detail-box">
@@ -334,6 +360,11 @@ function showResultEffect(resultKey) {
             // 二つ名の同期処理
             const nickname = mbtiNicknames[currentType] || "未知なる者";
             document.getElementById('res-attr').textContent = attrData.name.replace('XX', nickname);
+
+            // 画像とオーラ背景のセット
+            const imageSrc = mbtiImages[currentType] || fallbackImg;
+            document.getElementById('res-image').src = imageSrc;
+            document.getElementById('aura-bg').style.background = `radial-gradient(circle at center, rgba(${attrData.auraRGB}, 0.8) 0%, rgba(${attrData.auraRGB}, 0) 70%)`;
 
             finalResult.style.display = 'flex';
         }, 3000); // 3秒間グリッチ
