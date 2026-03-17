@@ -229,33 +229,33 @@ function init() {
                     <div class="options-row">
                         <div class="option-edge-text">そう思う</div>
                         <div class="circles-container">
-                            <label class="circle-label size-lg color-green" title="全くそう思う">
+                            <label class="circle-label size-lg color-green" >
                                 <input type="radio" name="${q.id}" value="7">
                                 <span class="circle-bg circle-bg-green"></span>
                             </label>
-                            <label class="circle-label size-md color-green" title="そう思う">
+                            <label class="circle-label size-md color-green">
                                 <input type="radio" name="${q.id}" value="6">
                                 <span class="circle-bg circle-bg-green"></span>
                             </label>
-                            <label class="circle-label size-sm color-green" title="ややそう思う">
+                            <label class="circle-label size-sm color-green">
                                 <input type="radio" name="${q.id}" value="5">
                                 <span class="circle-bg circle-bg-green"></span>
                             </label>
                             
-                            <label class="circle-label size-xs color-gray" title="どちらとも言えない">
+                            <label class="circle-label size-xs color-gray">
                                 <input type="radio" name="${q.id}" value="4">
                                 <span class="circle-bg circle-bg-gray"></span>
                             </label>
                             
-                            <label class="circle-label size-sm color-purple" title="ややそう思わない">
+                            <label class="circle-label size-sm color-purple">
                                 <input type="radio" name="${q.id}" value="3">
                                 <span class="circle-bg circle-bg-purple"></span>
                             </label>
-                            <label class="circle-label size-md color-purple" title="そう思わない">
+                            <label class="circle-label size-md color-purple">
                                 <input type="radio" name="${q.id}" value="2">
                                 <span class="circle-bg circle-bg-purple"></span>
                             </label>
-                            <label class="circle-label size-lg color-purple" title="全くそう思わない">
+                            <label class="circle-label size-lg color-purple">
                                 <input type="radio" name="${q.id}" value="1">
                                 <span class="circle-bg circle-bg-purple"></span>
                             </label>
