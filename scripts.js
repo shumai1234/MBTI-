@@ -28,7 +28,7 @@ const questions = [
     { id: 'q3', text: "相手に「何でもいいよ、任せる」と言われると、煩わしく感じる。", layer: 'SM', reverse: true, dummy: false },
     { id: 'q4', text: "自分のこだわりやマイルールを、パートナーや友人も尊重すべきだと感じる。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q5', text: "喧嘩をした時、時間が問題を解決するだろうと考える", layer: 'SM', reverse: true, dummy: false },
-    { id: 'q6', text: "会話の主導権は自分が握り、自分の話を楽しそうに聞いてほしい。", layer: 'SM', reverse: false, dummy: false },
+    { id: 'q6', text: "自分はどちらかというと話を聞くよりも話す方が好きだ。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q7', text: "仕事やプロジェクトでは、自分で方針を決めてクリエイティブに働く方が得意だ。", layer: 'SM', reverse: false, dummy: false },
     { id: 'q8', text: "相手に「すごいやつだ」と言われると、謙遜しがちだ。", layer: 'SM', reverse: true, dummy: false },
     { id: 'q9', text: "自分は比較的愛想笑いをよくする方だと感じる。", layer: 'SM', reverse: true, dummy: false },
